@@ -1,2 +1,2 @@
 # data_structure
-数据结构的学习代码
+基于 Python 数据结构的学习代码
