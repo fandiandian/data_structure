@@ -59,6 +59,12 @@ class Tree:
         """
         raise NotImplementedError("must be implemented by subclass")
 
+    def positions(self):
+        """
+        返回树的所有位置节点的迭代对象
+        """
+        return NotImplementedError("must be implemented by subclass")
+
     def __len__(self):
         """
         Return the total number of elements is in the tree.
@@ -87,12 +93,6 @@ class Tree:
         通过判断树树的所有节点数量来判断树是否为空
         """
         return len(self) == 0
-    
-    def positions(self):
-        """
-        返回树的所有位置节点的迭代对象
-        """
-        return NotImplementedError("must be implemented by subclass")
 
     def depath(self, p):
         """
