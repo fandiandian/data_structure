@@ -58,7 +58,7 @@ class DynamicArray:
         然后将当前数组中的元素的内存地址存储到新的数组中
         在将新的数组的内存地址与数组变量关联，当前数组会被垃圾回收掉
         """
-        new_arrary = self._make_array(new_arrary)
+        new_arrary = self._make_array(new_capacity)
         for k in range(self._n):
             new_arrary[k] = self._A[k]
         self._A = new_arrary
